@@ -21,3 +21,16 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+------------------------authentication--------------------------------------------
+Yes or no replies for authentication are not sufficient because they lack specificity and can be easily exploited by attackers using techniques like brute force.
+
+Server-side sessions store user data on the server, allowing the server to remember user information between requests.
+
+The problem with server-side sessions is that they can lead to scalability issues as the server has to manage and store session data for each user.
+
+Authentication tokens are secure, random strings generated upon successful authentication. They are typically used as proof of authentication and can be included in subsequent requests to access protected resources.
+
+Authentication tokens are often considered better than server-side sessions because they reduce the server's storage load, enhance scalability, and provide a stateless way of handling authentication, making them more suitable for distributed systems and APIs.
