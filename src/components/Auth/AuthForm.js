@@ -64,7 +64,7 @@ const AuthForm = () => {
         }
       })
       .then((data) => {
-        authCxt.login(data.idToken);
+        authCxt.login(data.idToken, 300);//300 is second i.e. 5 minute to automatic logout after 5 min of login
         history.replace("/");
       }) //uper wale then se jo data aaya usko yha handle kiye login se
       .catch((err) => alert(err.message));
